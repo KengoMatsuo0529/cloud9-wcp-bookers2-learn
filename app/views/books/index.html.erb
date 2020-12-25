@@ -1,4 +1,16 @@
 
+<h1>User info</h1>
+
+<table>
+  <tr>
+    name <%= @user.name %>
+  </tr>
+  <tr>
+    introduction <%= @user.introduction %> 
+  </tr>
+</table>
+
+<%= link_to "a", edit_user_path(@user) %>
 
 
 <h1>New Book</h1>
@@ -22,7 +34,7 @@
   </tr>
   <tr>
     <td>
-      <%= book.title %>
+      <a><%= book.title %></a>
     </td>
     <td>
       <%= book.body %>
